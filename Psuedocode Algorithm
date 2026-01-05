@@ -1,0 +1,14 @@
+START
+
+SET maximumAttempts TO 3
+SET attempts TO 0
+
+WHILE attempts < maximumAttempts
+
+
+
+END WHILE
+
+
+
+END
