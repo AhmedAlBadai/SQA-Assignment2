@@ -5,6 +5,15 @@ SET attempts TO 0
 
 WHILE attempts < maximumAttempts
 
+ ASK user for username and password
+
+    IF username and password are correct THEN
+        DISPLAY "Login Successful"
+        STOP
+    ELSE
+        DISPLAY "Login Failed"
+        attempts = attempts + 1
+    END IF
 
 
 END WHILE
