@@ -18,6 +18,8 @@ WHILE attempts < maximumAttempts
 
 END WHILE
 
-
+IF attempts >= maximumAttempts THEN
+    DISPLAY "Too Many Attempts"
+END IF
 
 END
