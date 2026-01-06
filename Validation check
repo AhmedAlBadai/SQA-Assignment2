@@ -1,0 +1,27 @@
+START
+
+SET maximumAttempts TO 3
+SET attempts TO 0
+
+WHILE attempts < maximumAttempts
+
+ ASK user for username and password
+
+    IF username and password are correct THEN
+        DISPLAY "Login Successful"
+        STOP
+    ELSE
+        DISPLAY "Login Failed"
+        attempts = attempts + 1
+    ELSE IF username and password are empty THEN
+        DISPLAY "Fill in the Fields"
+    END IF
+
+
+END WHILE
+
+IF attempts >= maximumAttempts THEN
+    DISPLAY "Too Many Attempts"
+END IF
+
+END
